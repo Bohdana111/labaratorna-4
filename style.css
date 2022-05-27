@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hovery {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1;
+    color: white;
+    font-size: 20px;
+}
+.structure{
+    width: 250px;
+    margin: 50px auto;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: #494849;
+}
+.circle{
+    display: flex;
+}
+.circle_red,
+.circle_orange,
+.circle_green {
+    width:  15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.circle_red{
+    background-color: red;
+}
+.circle_orange{
+    background-color: orange;
+}
+.circle_green{
+    background-color: green;
+}
+.value_result{
+    text-align: right;
+}
+.component{
+    width: 100%;
+    display: flex;
+}
+.operator{
+    width: 60px;
+    height: 60px;
+    background-color: #626062;
+    color: inherit;
+    font: inherit;
+    border: 1px solid #494849;
+
+}
+.operator_orange{
+    background-color: orange;
+}
+.operator[name="equal"]{
+    border-bottom-right-radius: 12px
+}
+.operator_null{
+    width: 120px;
+    background-color: #626062;
+    border-bottom-left-radius: 12px ;
+}
+.value_result{
+    padding: 10px 10px;
+    font-size: 30px;
+}
+
+
+
