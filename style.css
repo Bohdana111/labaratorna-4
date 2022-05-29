@@ -75,7 +75,10 @@ body{
     background-color: #494849;
 }
 .circle{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 15px);
+    grid-gap: 5px;
+    margin-left: 5px;   
 }
 .circle_red,
 .circle_orange,
@@ -83,7 +86,7 @@ body{
     width:  15px;
     height: 15px;
     border-radius: 50%;
-    margin-left: 5px;
+    
 }
 .circle_red{
     background-color: red;
@@ -97,13 +100,12 @@ body{
 .value_result{
     text-align: right;
 }
-.component{
-    width: 100%;
-    display: flex;
+.board{
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px 60px 60px;
 }
 .operator{
-    width: 60px;
-    height: 60px;
     background-color: #626062;
     color: inherit;
     font: inherit;
@@ -117,7 +119,8 @@ body{
     border-bottom-right-radius: 12px
 }
 .operator_null{
-    width: 120px;
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: #626062;
     border-bottom-left-radius: 12px ;
 }
